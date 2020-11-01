@@ -1,16 +1,30 @@
 <!doctype html>
+<html lang="en">
 
-<html>
-    <head>
-      <Script>
-      let Year = prompt ( "Year of birth", 1988 );
-  console.log (Year); 
-  alert (year of birth is ${Year});
-  let OK = confirm ( "You are young" );
-  // alert (OK);
-      </Script>
-    </head>
-    <body>
-      <h1>Hello Plunker!</h1>
-    </body>
-  </html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Checking Age</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="jquery.js"></script>
+	<script src="main.js"></script>
+</head>
+
+<body>
+
+	<div id="ageWrapper" class="ageUnknown">
+		<div id="agePopUp" class="ageNotConfirmed">
+			<div class="lock">
+			</div>
+			<h2 id="AgeTitle">What is your age?</h2>
+			<input type="text" id="ageValue" name="ageValueName"><br>
+			<a href="#" id="ageOkay">Yes</a>
+			<a href="#" id="ageBad">No</a>
+		</div>
+	</div>
+
+
+	<div id="Message" class="centered">Lets check your age</div>
+</body>
+
+</html>
